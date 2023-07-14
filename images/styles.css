@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgb(243, 224, 188);
+    height: 2000px;
+    padding: 100px;
+
+}
+
+.wrapper{
+    height: 400px;
+    width: 700px;
+    box-shadow: 2px 2px gray;
+    display: grid;
+    grid-template-columns: 300px 400px;
+    grid-template-rows: 60px repeat(4,1fr);
+    background-color: white;
+    border-radius: 25px;
+    
+}
+
+.image{  
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-image: url("mug.jpg");
+    background-size: 100%; 
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.content{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.title{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+    /* justify-self:left; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    color: gray;
+    margin-left: 30px;
+}
+
+.heading{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-left: 30px;
+}
+
+.text{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-left: 30px;
+    align-self: center;
+    justify-self:left;
+    color: grey;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.price{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-size: 35px;
+    margin-left: 30px;
+    align-self: center;
+    justify-self:left;
+    color: green;
+}
+
+strike{
+    font-size: small;
+    color: grey;
+    font-size: 18px;
+}
+
+.button{
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border-radius: 10px;
+    background-color: green;
+    height: 40px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    padding: 9px;
+    justify-self: center;
+    
+}
+
+
+
+
